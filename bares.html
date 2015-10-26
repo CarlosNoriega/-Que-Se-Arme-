@@ -1,6 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+      <style>
+          .hid{
+              display:none;
+          }
+      </style>
+      <script>
+          function mostrar(id) {
+              if (document.getElementById(id).style.display == 'block') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+      </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +49,8 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <div class="row lugarFila">
+
+            <a role="button" onClick="mostrar('lugar1')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/laboquita.jpg" class="tableImg"/>
               </div>
@@ -46,6 +61,12 @@
                   <p class="lugarDesc">Horario: 13:00 – 2:00</p>
               </div>
             </div>
+              </a>
+              <div class="row lugarFila hid" id="lugar1">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.060422687178!2d-103.45234!3d20.729906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c0558dc36afa4a!2sMargherita+Pizza+Y+Vino!5e0!3m2!1ses-419!2smx!4v1445821932562" width=100% height=400 frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              
+
             <div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/lareallicoreria.png" class="tableImg"/>
@@ -57,6 +78,7 @@
                   <p class="lugarDesc">Horario: 22:00 – 4:00</p>
               </div>
             </div>
+
             <div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/barrabar.jpg" class="tableImg"/>
@@ -68,6 +90,7 @@
                   <p class="lugarDesc">Horario: 11:00 – 18:30</p>
               </div>
             </div>
+
             <div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/lavitola.png" class="tableImg"/>
@@ -79,6 +102,7 @@
                   <p class="lugarDesc">Horario: 12:00 – 2:00</p>
               </div>
             </div>
+
           </div>
         </div>
         <div class="row menuNoIndex">
