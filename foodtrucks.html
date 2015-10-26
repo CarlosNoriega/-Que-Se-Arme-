@@ -1,6 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+      <style>
+          .hid {
+              display: none;
+          }
+      </style>
+      <script>
+          function mostrar(id) {
+              if (document.getElementById(id).style.display == 'block') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+
+
+
+      </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,18 +52,29 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <div class="row lugarFila">
+
+            <a role="button" onClick="mostrar('lugar1')"><div class="row lugarFila">
               <div class="col-md-4">
-                <img src="img/delibus.jpg" class="tableImg"/>
+                <img src="img/bricklanetruck.jpg" class="tableImg"/>
               </div>
               <div class="col-md-8">
-                  <h3 class="lugarTitulo">Deli Bus Snacks</h3>
-                  <p class="lugarDesc">Ricos sándwiches, hamburguesas, ensaladas y empanadas argentinas con ricos toppings. Su estilo es muy fresco y sano, cuentan con servicio a domicilio y algunas sillitas para aquellos que quieran comer frente al bus. </p>
-                  <p class="lugarDesc">Lerdo de Tejada 2635, casi esquina Agustín Yáñez</p>
-                  <p class="lugarDesc">lun a vie de 8:30 am a 4 pm</p>
+                  <h3 class="lugarTitulo">Brick Lane Truck</h3>
+                  <p class="lugarDesc">Prepara desayunos y almuerzos con un toque gourmet, su menú ofrece distintos tipos de bagels, ciabattas y burritos. </p>
+                  <p class="lugarDesc">Av. Servidor Publico 1351 Col Jardines del Valle, Zapopan</p>
+                  <p class="lugarDesc">13:00-23:00</p>
               </div>
             </div>
-            <div class="row lugarFila">
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar1">
+                  <div>
+                      <img src="img/bricklanetruck3.jpg" width=30% height=50% />
+                      <img src="img/bricklanetruck2.jpg" width=30% height=50% />
+                      <img src="img/bricklanetruck1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/bricklanetruckmapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
+            <a role="button" onClick="mostrar('lugar2')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/gastromovil.jpg" class="tableImg"/>
               </div>
@@ -57,7 +85,17 @@
                   <p class="lugarDesc">lun a mié de 8:30 a 11 pm: jue a sáb de 8:30 pm a 12 am</p>
               </div>
             </div>
-            <div class="row lugarFila">
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar2">
+                  <div>
+                      <img src="img/gastromovil3.jpg" width=30% height=50% />
+                      <img src="img/gastromovil2.jpg" width=30% height=50% />
+                      <img src="img/gastromovil1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/gastromovilmapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
+            <a role="button" onClick="mostrar('lugar3')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/greco.jpg" class="tableImg"/>
               </div>
@@ -68,7 +106,17 @@
                   <p class="lugarDesc">lun de 1 pm a 12 am, y de mar a sáb de 7 pm a 12 am</p>
               </div>
             </div>
-            <div class="row lugarFila">
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar3">
+                  <div>
+                      <img src="img/greco3.jpg" width=30% height=50% />
+                      <img src="img/greco2.jpg" width=30% height=50% />
+                      <img src="img/greco1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/grecomapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
+            <a role="button" onClick="mostrar('lugar4')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/grillmovil.jpg" class="tableImg"/>
               </div>
@@ -79,6 +127,16 @@
                   <p class="lugarDesc">mar a sáb de 2 a 10 pm</p>
               </div>
             </div>
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar4">
+                  <div>
+                      <img src="img/grillmovil3.jpg" width=30% height=50% />
+                      <img src="img/grillmovil2.jpg" width=30% height=50% />
+                      <img src="img/grillmovil1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/grillmovilmapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
           </div>
         </div>
         <div class="row menuNoIndex">
@@ -87,7 +145,7 @@
               <tr>
                 <td class="lugarTable"><a href="index.html"><img src="img/chuy.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="crearEvento.html"><img src="img/crear evento.png" class="tableImg"/></a></td>
-                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/buscarLugar.png" class="tableImg"/></a></td>
+                <td class="lugarTable"><a href="mapa.html"><img src="img/mundo.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="buscarEvento.html"><img src="img/Buscar Evento.png" class="BuscarEvento"/></a></td>
                 <td class="lugarTable"><a href="random.html"><img src="img/random.png" class="Random"/></a></td>
               </tr>

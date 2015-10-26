@@ -14,6 +14,9 @@
                   document.getElementById(id).style.display = 'block';
               }
           }
+
+          
+
       </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,12 +65,17 @@
               </div>
             </div>
               </a>
-              <div class="row lugarFila hid" id="lugar1">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.060422687178!2d-103.45234!3d20.729906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c0558dc36afa4a!2sMargherita+Pizza+Y+Vino!5e0!3m2!1ses-419!2smx!4v1445821932562" width=100% height=400 frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar1">
+                  <div>
+                      <img src="img/boquita3.jpg" width=30% height=50% />
+                      <img src="img/boquita2.jpg" width=30% height=50% />
+                      <img src="img/boquita1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/boquitamapa.jpg" class="lugarDesc" width=50% height=50%/>
               </div>
               
 
-            <div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar2')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/lareallicoreria.png" class="tableImg"/>
               </div>
@@ -78,8 +86,18 @@
                   <p class="lugarDesc">Horario: 22:00 – 4:00</p>
               </div>
             </div>
+               </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar2">
 
-            <div class="row lugarFila">
+                  <div class="col-md-12">
+                      <img src="img/lareallicoreria3.jpg" width=30% height=50% />
+                      <img src="img/lareallicoreria2.jpg" width=30% height=50% />
+                      <img src="img/lareallicoreria1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/lareallicoreriamapa.jpg" class="lugarDesc" width=50% height=50%/>
+              </div>
+
+             <a role="button" onClick="mostrar('lugar3')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/barrabar.jpg" class="tableImg"/>
               </div>
@@ -90,8 +108,18 @@
                   <p class="lugarDesc">Horario: 11:00 – 18:30</p>
               </div>
             </div>
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar3">
 
-            <div class="row lugarFila">
+                  <div class="col-md-12">
+                      <img src="img/barrabar3.jpg" width=30% height=50% />
+                      <img src="img/barrabar2.jpg" width=30% height=50% />
+                      <img src="img/barrabar1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/barrabarmapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
+            <a role="button" onClick="mostrar('lugar4')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/lavitola.png" class="tableImg"/>
               </div>
@@ -102,6 +130,16 @@
                   <p class="lugarDesc">Horario: 12:00 – 2:00</p>
               </div>
             </div>
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar4">
+
+                  <div class="col-md-12">
+                      <img src="img/lavitola3.jpg" width=30% height=50% />
+                      <img src="img/lavitola2.jpg" width=30% height=50% />
+                      <img src="img/lavitola1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/lavitolamapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
 
           </div>
         </div>
@@ -111,7 +149,7 @@
               <tr>
                 <td class="lugarTable"><a href="index.html"><img src="img/chuy.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="crearEvento.html"><img src="img/crear evento.png" class="tableImg"/></a></td>
-                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/buscarLugar.png" class="tableImg"/></a></td>
+                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/mundo.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="buscarEvento.html"><img src="img/Buscar Evento.png" class="BuscarEvento"/></a></td>
                 <td class="lugarTable"><a href="random.html"><img src="img/random.png" class="Random"/></a></td>
               </tr>

@@ -1,6 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+      <style>
+          .hid {
+              display: none;
+          }
+      </style>
+      <script>
+          function mostrar(id) {
+              if (document.getElementById(id).style.display == 'block') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+
+
+
+      </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,18 +52,29 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <div class="row lugarFila">
+
+            <a role="button" onClick="mostrar('lugar1')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/blackcoffe.png" class="tableImg"/>
               </div>
               <div class="col-md-8">
-                  <h3 class="lugarTitulo">Black Coffe Gallery</h3>
+                  <h3 class="lugarTitulo">Black Coffee Gallery</h3>
                   <p class="lugarDesc">Black Coffee Gallery es una empresa cien por ciento mexicana  dedicada a la preparación y venta de bebidas a base de café</p>
                   <p class="lugarDesc">Ramón Corona 4522 local 4, Jardín Real, 45136 Zapopan, Jal.</p>
                   <p class="lugarDesc">Horario: 8:00 – 21:00</p>
               </div>
             </div>
-            <div class="row lugarFila">
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar1">
+                  <div>
+                      <img src="img/blackcoffe3.jpg" width=30% height=50% />
+                      <img src="img/blackcoffe2.jpg" width=30% height=50% />
+                      <img src="img/blackcoffe1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/blackcoffemapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
+            <a role="button" onClick="mostrar('lugar2')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/starbucks.jpg" class="tableImg"/>
               </div>
@@ -57,7 +85,17 @@
                   <p class="lugarDesc">Horario: 8:00 – 22:00</p>
               </div>
             </div>
-            <div class="row lugarFila">
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar2">
+                  <div>
+                      <img src="img/starbucks3.jpg" width=30% height=50% />
+                      <img src="img/starbucks2.jpg" width=30% height=50% />
+                      <img src="img/starbucks1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/starbucksmapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
+            <a role="button" onClick="mostrar('lugar3')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/hadascafe.jpg" class="tableImg"/>
               </div>
@@ -68,7 +106,17 @@
                   <p class="lugarDesc">Horario: 8:00 – 16:00</p>
               </div>
             </div>
-            <div class="row lugarFila">
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar3">
+                  <div>
+                      <img src="img/hadascafe3.jpg" width=30% height=50% />
+                      <img src="img/hadascafe2.jpg" width=30% height=50% />
+                      <img src="img/hadascafe1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/hadascafemapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
+            <a role="button" onClick="mostrar('lugar4')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/trioskacafe.png" class="tableImg"/>
               </div>
@@ -79,6 +127,16 @@
                   <p class="lugarDesc">Horario: 10:30 – 20:00</p>
               </div>
             </div>
+              </a>
+              <div class="row lugarFila hid lugarDesc" id="lugar4">
+                  <div>
+                      <img src="img/trioskacafe3.jpg" width=30% height=50% />
+                      <img src="img/trioskacafe2.jpg" width=30% height=50% />
+                      <img src="img/trioskacafe1.jpg" width=30% height=50% />
+                  </div>
+                  <img src="img/trioskacafemapa.jpg" class="lugarDesc" width=50% height=50% />
+              </div>
+
           </div>
         </div>
         <div class="row menuNoIndex">
@@ -87,7 +145,7 @@
               <tr>
                 <td class="lugarTable"><a href="index.html"><img src="img/chuy.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="crearEvento.html"><img src="img/crear evento.png" class="tableImg"/></a></td>
-                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/buscarLugar.png" class="tableImg"/></a></td>
+                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/mundo.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="buscarEvento.html"><img src="img/Buscar Evento.png" class="BuscarEvento"/></a></td>
                 <td class="lugarTable"><a href="random.html"><img src="img/random.png" class="Random"/></a></td>
               </tr>

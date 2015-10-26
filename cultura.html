@@ -1,6 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+      <style>
+          .hid {
+              display: none;
+          }
+      </style>
+      <script>
+          function mostrar(id) {
+              if (document.getElementById(id).style.display == 'block') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+
+
+
+      </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +53,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar1')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/onesimo.jpg" class="tableImg"/>
               </div>
@@ -48,13 +65,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14931.266874494571!2d-103.3445018!3d20.6770343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f9d4b41cb15f3fa!2sTeatro+Degollado!5e0!3m2!1ses-419!2smx!4v1445823351944" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar1">
+                  <div>
+                      <img src="img/danzacontemporanea3.png" width=30% height=50% />
+                      <img src="img/danzacontemporanea2.jpg" width=30% height=50% />
+                      <img src="img/danzacontemporanea1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/degolladomapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
-             <a role="button" data-toggle="collapse" href="#collapsarBotones2" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+             <a role="button" onClick="mostrar('lugar2')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/blueman.jpg" class="tableImg"/>
               </div>
@@ -66,13 +86,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones2">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14931.266874494571!2d-103.3445018!3d20.6770343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f9d4b41cb15f3fa!2sTeatro+Degollado!5e0!3m2!1ses-419!2smx!4v1445823351944" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar2">
+                  <div>
+                      <img src="img/blueman3.jpg" width=30% height=50% />
+                      <img src="img/blueman2.jpg" width=30% height=50% />
+                      <img src="img/blueman1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/degolladomapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones3" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar3')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/paleoalgoritmo.jpg" class="tableImg"/>
               </div>
@@ -84,13 +107,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones3">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14933.049206382404!2d-103.34631033068848!3d20.658904932730326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x38e1b214d46e71b!2sMuseo+de+Paleontolog%C3%ADa+de+Guadalajara%2C+Federico+A.+Sol%C3%B3rzano+Barreto!5e0!3m2!1ses-419!2smx!4v1445823628282" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar3">
+                  <div>
+                      <img src="img/paleoalgoritmo3.png" width=30% height=50% />
+                      <img src="img/paleoalgoritmo2.jpg" width=30% height=50% />
+                      <img src="img/paleoalgoritmo1.png" width=30% height=50% />
                   </div>
+                  <img src="img/museo.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones4" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar4')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/cielitolindo.jpg" class="tableImg"/>
               </div>
@@ -102,10 +128,13 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones4">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14931.266874494571!2d-103.3445018!3d20.6770343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f9d4b41cb15f3fa!2sTeatro+Degollado!5e0!3m2!1ses-419!2smx!4v1445823351944" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar4">
+                  <div>
+                      <img src="img/cielitolindo3.jpg" width=30% height=50% />
+                      <img src="img/cielitolindo2.jpg" width=30% height=50% />
+                      <img src="img/cielitolindo1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/degolladomapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
           </div>
@@ -116,7 +145,7 @@
               <tr>
                 <td class="lugarTable"><a href="index.html"><img src="img/chuy.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="crearEvento.html"><img src="img/crear evento.png" class="tableImg"/></a></td>
-                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/buscarLugar.png" class="tableImg"/></a></td>
+                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/mundo.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="buscarEvento.html"><img src="img/Buscar Evento.png" class="BuscarEvento"/></a></td>
                 <td class="lugarTable"><a href="random.html"><img src="img/random.png" class="Random"/></a></td>
               </tr>

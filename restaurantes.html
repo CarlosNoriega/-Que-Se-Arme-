@@ -1,6 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+      <style>
+          .hid {
+              display: none;
+          }
+      </style>
+      <script>
+          function mostrar(id) {
+              if (document.getElementById(id).style.display == 'block') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+
+
+
+      </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +52,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-              <a role="button" data-toggle="collapse" href="#collapsarBotones" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+              <a role="button" onClick="mostrar('lugar1')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/Margherita.png" class="tableImg"/>
               </div>
@@ -48,13 +65,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.060422687178!2d-103.45234!3d20.729906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c0558dc36afa4a!2sMargherita+Pizza+Y+Vino!5e0!3m2!1ses-419!2smx!4v1445821932562" width=100% height=400 frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar1">
+                  <div>
+                      <img src="img/margarita3.jpg" width=30% height=50% />
+                      <img src="img/margarita2.jpg" width=30% height=50% />
+                      <img src="img/margarita1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/margaritamapa.jpg" class="lugarDesc" width=50% height=50%/>
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones2" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar2')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/Bistro.png" class="tableImg"/>
               </div>
@@ -67,13 +87,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones2">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14925.133847039515!2d-103.4249757!3d20.7393019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb720da133d6e7af!2sBISTRO+CALLEJERO!5e0!3m2!1ses-419!2smx!4v1445822172285" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar2">
+                  <div>
+                      <img src="img/bistro3.jpg" width=30% height=50% />
+                      <img src="img/bistro2.jpg" width=30% height=50% />
+                      <img src="img/bistro1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/bistromapa.jpg" class="lugarDesc" width=50% height=50%/>
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones3" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar3')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/El Negro.jpg" class="tableImg"/>
               </div>
@@ -86,13 +109,16 @@
               </div>
             </div>
                </a>
-              <div class="collapse" id="collapsarBotones3">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.05046471742!2d-103.438435!3d20.730007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8e536995b32260!2sMariscos+El+Negro!5e0!3m2!1ses-419!2smx!4v1445822468080" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar3">
+                  <div>
+                      <img src="img/negro3.jpg" width=30% height=50% />
+                      <img src="img/negro2.jpg" width=30% height=50% />
+                      <img src="img/negro1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/negromapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones4" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar4')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/Papa Cabana.jpg" class="tableImg"/>
               </div>
@@ -105,10 +131,13 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones4">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.084282188394!2d-103.436858!3d20.729664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5a38052822dd23e!2sPapa+Caba%C3%B1a+Vallereal!5e0!3m2!1ses-419!2smx!4v1445822721103" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar4">
+                  <div>
+                      <img src="img/papa3.jpg" width=30% height=50% />
+                      <img src="img/papa2.jpg" width=30% height=50% />
+                      <img src="img/papa1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/papamapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
           </div>
@@ -119,7 +148,7 @@
               <tr>
                 <td class="lugarTable"><a href="index.html"><img src="img/chuy.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="crearEvento.html"><img src="img/crear evento.png" class="tableImg"/></a></td>
-                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/buscarLugar.png" class="tableImg"/></a></td>
+                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/mundo.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="buscarEvento.html"><img src="img/Buscar Evento.png" class="BuscarEvento"/></a></td>
                 <td class="lugarTable"><a href="random.html"><img src="img/random.png" class="Random"/></a></td>
               </tr>

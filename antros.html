@@ -1,6 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+      <style>
+          .hid {
+              display: none;
+          }
+      </style>
+      <script>
+          function mostrar(id) {
+              if (document.getElementById(id).style.display == 'block') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+
+
+
+      </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +53,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar1')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/lasanta.jpg" class="tableImg"/>
               </div>
@@ -48,13 +65,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14927.855007731387!2d-103.4098947!3d20.7116965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36d165254f8623ff!2sLa+Santa!5e0!3m2!1ses-419!2smx!4v1445823926444" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar1">
+                  <div>
+                      <img src="img/lasanta3.jpg" width=30% height=50% />
+                      <img src="img/lasanta2.jpg" width=30% height=50% />
+                      <img src="img/lasanta1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/lasantamapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones2" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar2')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/bosse.jpg" class="tableImg"/>
               </div>
@@ -66,13 +86,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones2">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.060422687178!2d-103.45234!3d20.729906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c0558dc36afa4a!2sMargherita+Pizza+Y+Vino!5e0!3m2!1ses-419!2smx!4v1445821932562" width=100% height=400 frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar2">
+                  <div>
+                      <img src="img/bosse3.jpg" width=30% height=50% />
+                      <img src="img/bosse2.jpg" width=30% height=50% />
+                      <img src="img/bosse1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/bossemapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones3" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar3')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/babel.jpg" class="tableImg"/>
               </div>
@@ -84,13 +107,16 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones3">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.060422687178!2d-103.45234!3d20.729906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c0558dc36afa4a!2sMargherita+Pizza+Y+Vino!5e0!3m2!1ses-419!2smx!4v1445821932562" width=100% height=400 frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar3">
+                  <div>
+                      <img src="img/babel3.jpg" width=30% height=50% />
+                      <img src="img/babel2.jpg" width=30% height=50% />
+                      <img src="img/babel1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/babelmapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
-            <a role="button" data-toggle="collapse" href="#collapsarBotones4" aria-expanded="false" aria-controls="collapsarBotones"><div class="row lugarFila">
+            <a role="button" onClick="mostrar('lugar4')"><div class="row lugarFila">
               <div class="col-md-4">
                 <img src="img/tribeca.jpg" class="tableImg"/>
               </div>
@@ -102,10 +128,13 @@
               </div>
             </div>
               </a>
-              <div class="collapse" id="collapsarBotones4">
-                  <div class="well">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.060422687178!2d-103.45234!3d20.729906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c0558dc36afa4a!2sMargherita+Pizza+Y+Vino!5e0!3m2!1ses-419!2smx!4v1445821932562" width=100% height=400 frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="row lugarFila hid lugarDesc" id="lugar4">
+                  <div>
+                      <img src="img/tribeca3.jpg" width=30% height=50% />
+                      <img src="img/tribeca2.jpg" width=30% height=50% />
+                      <img src="img/tribeca1.jpg" width=30% height=50% />
                   </div>
+                  <img src="img/tribecamapa.jpg" class="lugarDesc" width=50% height=50% />
               </div>
 
           </div>
@@ -116,7 +145,7 @@
               <tr>
                 <td class="lugarTable"><a href="index.html"><img src="img/chuy.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="crearEvento.html"><img src="img/crear evento.png" class="tableImg"/></a></td>
-                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/buscarLugar.png" class="tableImg"/></a></td>
+                <td class="lugarTable"><a href="buscarLugar.html"><img src="img/mundo.png" class="tableImg"/></a></td>
                 <td class="lugarTable"><a href="buscarEvento.html"><img src="img/Buscar Evento.png" class="BuscarEvento"/></a></td>
                 <td class="lugarTable"><a href="random.html"><img src="img/random.png" class="Random"/></a></td>
               </tr>
